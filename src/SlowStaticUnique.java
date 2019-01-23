@@ -4,8 +4,8 @@ import java.util.*;
 public class SlowStaticUnique {
 	public static void main(String[] args) throws FileNotFoundException {
 
-		Scanner s = new Scanner(new File("/data/kjv10.txt"));
-		HashSet<String> list = new HashSet<>();
+		Scanner s = new Scanner(new File("data/kjv10.txt"));
+		ArrayList<String> list = new ArrayList<>();
 		int wcount = 0;
 		double start = System.nanoTime();
 
