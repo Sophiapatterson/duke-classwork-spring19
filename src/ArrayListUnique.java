@@ -11,7 +11,7 @@ public class ArrayListUnique {
 				String current = ret.get(k);
 				if (current.equals(s)) {
 					done = true;
-					break;
+					break;  // break out of loop looking at ret
 				}
 				if (current.compareTo(s) > 0) {
 					ret.add(null);  // grow with nothing
@@ -26,8 +26,7 @@ public class ArrayListUnique {
 			if (! done) {
 				ret.add(s);
 			}
-		}
-		
+		}	
 		return ret;
 	}
 	
